@@ -21,19 +21,24 @@ header{
   align-items: center;
   background-image: url(./Assets/background.png), url(./Assets/right.png), url(./Assets/left.png);
   background-position: center, left top, right top;
-  background-size: 2300px, auto, auto;
+  background-size: 2400px, auto, auto;
   background-repeat: no-repeat;
 }
 
 nav{
   background: linear-gradient(to right, #04071D, #1c1f38);
   display: inline-flex;
-  border: 1px solid #6971A2;
+  border: 1px solid #20243E;
   border-radius: 13px;
   height: auto;
   padding: 18px 25px;
   gap: 25px;
   margin-top: 35px;
+  transition: .5s;
+}
+
+nav:hover{
+  border: 1px solid #6971A2;
 }
 
 nav li{
@@ -89,11 +94,53 @@ nav li a{
   margin-top: 35px;
   padding: 18px 32px;
   border-radius: 14px;
-  border: 1px solid #6971A2;
+  border: 1px solid #20243E;
   background: linear-gradient(to right,#212442, #04071D );
   display: flex; gap: 10px;
   color: #E4ECFF;
   font-size: 18px;
   font-weight: 500;
   align-items: center;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.header_content button:hover{
+  border: 1px solid #6971A2;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------Responsiveness------------------------------------------------------------------------------------------------------------------------ */
+
+@media screen and (width < 768px) {
+  header{
+    background-image: url(./Assets/background.png);
+  }
+
+  nav{
+    width: 90%;
+    justify-content: center;
+  }
+
+  .header_content h1{
+    font-size: 44px;
+    width: 85%;
+    margin: 20px 0;
+  }
+
+  .header_content .headlin{
+    font-size: 12px;
+  }
+  .header_content .headlin2{
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .header_content button{
+    width: 90%;
+    justify-content: center;
+  }
+
+  nav li a{
+    font-size: 14px;
+  }
 }
