@@ -12,6 +12,11 @@ body{
   color: white;
 }
 
+section{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 header{
   width: 100%;
   display: flex;
@@ -39,10 +44,12 @@ nav{
 
 nav:hover{
   border: 1px solid #6971A2;
+  background: linear-gradient(to right,#212442, #04071D );
 }
 
 nav li{
   list-style: none;
+  position: relative;
 }
 
 nav li a{
@@ -50,6 +57,21 @@ nav li a{
   font-size: 1rem;
   text-decoration: none;
   font-weight: 500;
+}
+
+nav li a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #6971A2;
+  left: 0;
+  bottom: -6px;
+  transition: .5s;
+}
+
+nav li a:hover::after{
+  width: 100%;
 }
 
 .header_content{
@@ -107,8 +129,34 @@ nav li a{
 
 .header_content button:hover{
   border: 1px solid #6971A2;
+  background: linear-gradient(to right,#04071D, #212442 );
 }
 
+.top_part{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tl_part{
+  width: 58%;
+}
+
+.tl_part img{
+  width: 100%;
+}
+
+.tr_part{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tr_part img{
+  width: 100%;
+}
 /* ----------------------------------------------------------------------------------------------------------------------Responsiveness------------------------------------------------------------------------------------------------------------------------ */
 
 @media screen and (width < 768px) {
@@ -133,6 +181,7 @@ nav li a{
   .header_content .headlin2{
     font-size: 15px;
     line-height: 1.3;
+    max-width: 94%;
   }
 
   .header_content button{
