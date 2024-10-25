@@ -66,4 +66,68 @@
   .bl_part{
     gap: 14px;
   }
+
+  .project_container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project{
+    padding: 16px 12px;
+    border-radius: 12px;
+  }
+
+  .project h4{
+    font-size: 20px;
+    margin: 12px 0;
+  }
+
+  .project > p{
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .project_skills div{
+    width: 34px;
+    height: 34px;
+  }
+
+  .project_skills div::after{
+    width: 36px;
+    height: 36px;
+  }
+
+  .project_skills div img{
+    width: 17px;
+  }
+
+  .project_skills .div1{
+    left: 0;
+  }
+  
+  .project_skills .div2{
+    left: 28px;
+  }
+  .project_skills .div3{
+    left: 58px;
+  }
+  .project_skills .div4{
+    left: 88px;
+  }
+  .project_skills .div5{
+    left: 118px;
+  }
+
+  /* .project_demo{
+    top: 0;
+    transform: translateY(0);
+  } */
+
+  .project_info{
+    height: 35px;
+  }
+
+  .project_demo a{
+    font-size: 14px;
+    gap: 8px;
+  }
 }
