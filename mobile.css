@@ -134,4 +134,30 @@
     font-size: 14px;
     gap: 8px;
   }
+
+  .review{
+    width: 100%;
+  }
+
+  .company{
+    justify-content: center;
+    gap: 1.3rem 2rem;
+  }
+
+  .review > p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .client_bio h5{
+    font-size: 16px;
+  }
+
+  .client_bio p{
+    font-size: 12px;
+  }
+
+  .company img{
+    width: 40%;
+  }
 }

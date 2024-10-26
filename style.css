@@ -378,12 +378,20 @@ nav li a:hover::after{
   margin-top: 5px;
 }
 
+.review{
+  width: 80%;
+  border-radius: 12px;
+  padding: 20px 16px;
+}
+
 .company{
   width: 100%;
   display: flex;
   margin-top: 50px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .company img{
