@@ -88,7 +88,7 @@ nav li a:hover::after {
 .header_content {
   width: 80%;
   margin: 0 auto;
-  height: calc(100vh - 58px);
+  height: 100%;
   /* text-align: center; */
   display: flex;
   align-items: center;
