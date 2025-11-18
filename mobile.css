@@ -40,6 +40,11 @@
     width: 90%;
   }
 
+  .header_right::after{
+    left: 5%;
+    top: 4%;
+  }
+
   .header_content h1{
     font-size: 44px;
     /* width: 85%; */
